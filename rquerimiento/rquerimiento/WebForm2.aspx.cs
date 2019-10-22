@@ -11,6 +11,17 @@ namespace rquerimiento
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            this.txtDocumento.Text=(string)Session["documento"];
+            this.txtNombre.Text = (string)Session["nombre"];
+            this.txtApellido.Text =(string)Session["apellido"];
+            txtDireccion.Text = (string)Session["direccion"];
+            txtTelefono.Text = (string)Session["telefono"];
+            txtEmail.Text = (string)Session["email"];
+            txtFecha.Text =(string) Session["fechaNacimiento"];
+            txtTipoPersona.Text = (string)Session["TipoPersona"];
+            txtCiudad.Text = (string)Session["ciudad"];
+
+
 
         }
     }
